@@ -1,0 +1,35 @@
+.app__navitems-links{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.app__navitems-links li{
+    margin:0 1rem;
+    cursor: pointer; 
+}
+
+.app__navitems-links li:hover{
+    color: var(--color-grey);
+}
+
+.app__navitems-smallscreen-links{
+    list-style: none;
+}
+
+.app__navitems-smallscreen-links li{
+    margin: 2rem;
+    cursor: pointer;
+    color:var(--color-golden);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+
+@media screen and (max-width: 1150px){
+    .app__navitems-links{
+        display:none;
+    }
+}
